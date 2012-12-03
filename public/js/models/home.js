@@ -20,6 +20,10 @@ return Backbone.Model.extend({
       required: true,
       pattern: 'email',
     },
+    iNeed: {
+      required: true,
+    },
+   
   },
 
 })

@@ -28,12 +28,12 @@ return Backbone.View.extend({
 
   submit: function(e) {
     e.preventDefault()
-    var params = this.$('form').serializeObject();
+    var params = $('form').serializeObject();
     var result = this.model.save(params)
   },
 
   notice: function(model){
-    var msg  = '<p>Thanks for joining our mission of health!'
+    var msg  = '<p>Thanks you for your interest.</p>'
     new ModalView(msg)
   },
 
@@ -41,8 +41,6 @@ return Backbone.View.extend({
     this.render()
     this.model.clear({silent: true})
   },
-  
-
 });
 
 });

@@ -255,145 +255,82 @@ li {
   }
 }
 
-#ask, #contact {
-  .small-content {
-    width: 320px; 
-  }
-  textarea {
-    height: 100px;
-    width: 300px;
-  }
-}
-
-#ask {
-  h1 {
-    background: #fff;
-    padding: 20px;
-  }
-  button {
-    display: block; 
-  }
-}
-
-#questions {
-  .question {
-     #dollarValue {
-      color: green; 
-    } 
-    p {
-      font-size: 18px;       
-    }
-  }
-  .answer {
-    background: #FFB901;
-    h2 {
-      padding-left: 20px; 
-      color: #fff;
-    }
-    form {
-      .border-radius-for-pie(7px);
-      //width: 360px;
-      margin: 0 auto;
-      padding: 20px;
-      padding-top: 0;
-      #signup {
-        color: #fff; 
-        font-size: 16px;
-        text-align: center;
-      }
-      label {
-        color: #fff; 
-        width: 40px;
-      }
-      .form-horizontal .controls {
-        margin-left: 45px;
-      }
-      textarea {
-        .input-block-level();
-        height: 90px;
-      }
-    }
-  }
-}
-
 .home {
   min-height: 400px;
-  .jumbotron {
-    margin-top: 0;   
+  .banner {
+    .clearfix(); 
+    margin-top: 10px;
     margin-bottom: 0;
     h1 {
-      font-size: 60px; 
-      margin: 50px 0;
-    }
-    p {
-      text-align: center;  
-      margin-bottom: 50px;
-    }
-    span {
-      font-size: 46px;
+      font-size: 44px;
+      background: #2671AB;
+      .border-radius-for-pie(10px 10px 0 0);
+      padding: 20px;
+      margin: 0;
+      text-align: center;
+      color: #fff;
     }
   }
+  .body {
+    border-style: solid; 
+    border-width: 0 1px 0 1px; 
+    border-color: #2671AB;
+    .clearfix();
+  }
   #signup {
-    .border-radius-for-pie(7px);
     padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
     width: 360px;
     margin: 0 auto;
-    margin-bottom: 20px;
     background: #FFB901;
-    p {
-      font-size: 20px; 
-      color: #fff;
-      text-align: center;
+    float: right;
+    .header {
+      h3 {
+        color: #fff; 
+        line-height: 1;
+        margin-bottom: 18px;
+      }
+      p {
+        color: #fff;
+      }
     }
     form {
       margin-bottom: 0;
       .border-radius-for-pie(7px);
-      text-align: center;
       label {
         color: #fff; 
       }
+      .control-group.radio-group {
+        margin-bottom: 10px; 
+      }
+    }
+    .form-horizontal .controls {
+      margin-left: 20px; 
+    }
+    .form-horizontal .control-label.toLeft {
+      width: 50px; 
+      margin-right: 10px;
+    }
+    #iNeed {
+      float: none; 
     }
   }
-  #howItWorks {
+  .footer {
+    background: #2671AB;
+    padding: 20px;
     h2 {
-      font-size: 28px;    
-    } 
-    ul {
-      list-style: none;
-    }
-    li {
-      float: left;
-      width: 33%;
-    }
+      font-size: 28px;
+      margin: 0;
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: .5em;
+    }    
     p {
-      font-size: 18px; 
-      padding-left: 18px;
+      color: #fff; 
     }
-  } 
-  .answer {
-    background: #FFB901;
-    .border-radius-for-pie(7px);
-    h2 {
-      color: #fff;    
-    }
-    form {
-      padding: 0 20px;
-      //margin: 0 auto;
-      //text-align: center;
-      label {
-        display: inline-block;
-        clear: both;
-        font-size: 16px;
-        color: #fff;
-        font-weight: bold;
-      }
-      button {
-        display: block; 
-      }
-      textarea {
-        .input-block-level();
-        height: 90px;
-      }
+    .orange{
+      color: #ffb901;
     }
   }
 }
@@ -688,19 +625,24 @@ li {
   .clearfix();
   float: left;
   list-style: none;
-  margin-top: 15px;
+  margin-left: 0;
+  //margin-top: 15px;
   .brand {
-    .ir();
-    width: 119px;
-    height: 45px;
+    .box-shadow(0px 1px 1px #666);
     margin: 0 auto;
-    //margin-top: -6px;
-    margin-top: 3x;
-    margin-right: 20px;
-    padding: 0 !important;
+    .gradient-for-pie(#FFC43D, #E0A000);
+    color: #fff;
+    .border-radius-for-pie(15px);
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+    padding: 10px 20px;
     display: block;
     float: left;
-    background: url(/img/logo.png) no-repeat top left;
+    font-family: 'arial';
+    i {
+      font-weight: normal; 
+    }
   }
 }
 
@@ -1485,7 +1427,7 @@ table.setup {
       .clearfix(); 
     }
     p {
-      font-size: 20px;
+      font-size: 40px;
     }
   }
   #bomb {

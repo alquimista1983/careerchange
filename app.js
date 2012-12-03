@@ -16,7 +16,7 @@ var express = require('express')
 // Backbone models    
 Backbone = require('backbone')
 _ = require('underscore')
-var Validation = require('./public/js/libs/backbone.validation/backbone.validation.js')
+var Validation = require('./public/js/libs/backbone.validation/dist/backbone-validation.js')
   , NewUser = require('./public/js/models/newUser')
   , HomepageSubject = require('./public/js/models/homepage_subject')
   , Subject = require('./models/subject')
@@ -102,20 +102,20 @@ app.use(function(err, req, res, next) {
 //app.settings.env = 'production'
 
 app.configure('production', function(){
-  app.set('port', process.env.PORT || 8030);
-  db = mongo.db("localhost/cribum?auto_reconnect=true", {safe: true, strict: false}
+  app.set('port', process.env.PORT || 8040);
+  db = mongo.db("localhost/careerchange?auto_reconnect=true", {safe: true, strict: false}
   )
 })
 
 app.configure('staging', function(){
-  app.set('port', process.env.PORT || 8031);
-  db = mongo.db("localhost/dev_cribum?auto_reconnect=true", {safe: true, strict: false})
+  app.set('port', process.env.PORT || 8041);
+  db = mongo.db("localhost/dev_careerchange?auto_reconnect=true", {safe: true, strict: false})
 })
 
 app.configure('development', function(){
   app.use(express.errorHandler());
-  app.set('port', process.env.PORT || 8032);
-  db = mongo.db("localhost/dev_cribum?auto_reconnect=true", {safe: true, strict: false})
+  app.set('port', process.env.PORT || 8042);
+  db = mongo.db("localhost/dev_careerchange?auto_reconnect=true", {safe: true, strict: false})
 
 });
 
@@ -228,16 +228,13 @@ app.post('/landing', function(req, res, next) {
 
 app.post('/home', function(req, res, next) {
   var msg  = '<p>email: '+req.body.email+'</p>'
+      msg += '<p>I need: '+req.body.iNeed+'</p>'
   email(
     {
       subject: 'New Signup!', 
       html: msg 
     })
-  db.signups.insert(req.body, function(err, email) {
-    if (err)
-      return next(new DatabaseError(err))
-    res.send(req.body)
-  })
+  res.send(req.body)
 })
 
 app.post('/answers', function(req, res, next) {

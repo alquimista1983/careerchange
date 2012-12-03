@@ -1,6 +1,6 @@
 Backbone = require('backbone')
 _ = require('underscore')
-var Validation = require('../public/js/libs/backbone.validation/backbone.validation')
+var Validation = require('../public/js/libs/backbone.validation/dist/backbone-validation')
 _.extend(Backbone.Model.prototype, Backbone.Validation.mixin);
 
 

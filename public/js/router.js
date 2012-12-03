@@ -107,7 +107,7 @@ AppRouter.prototype.setupNav = function(route, section){
   //if (route === 'route:home' || route === 'route:electronic_repair')
     //isHome = true
   new MainMenu({ el: $("#main-menu"), user: this.user, isHome: isHome}).render()
-  new UserMenu({ el: $("#user-menu"), model: this.user}).render()
+  //new UserMenu({ el: $("#user-menu"), model: this.user}).render()
 }
 
 AppRouter.prototype.modernizr = function(){
