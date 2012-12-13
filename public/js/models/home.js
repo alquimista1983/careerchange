@@ -23,9 +23,13 @@ return Backbone.Model.extend({
     iNeed: {
       required: true,
     },
-   
+    experience: {
+      required: true,
+    },
+    whatField: {
+      required: true,
+    },
   },
-
 })
 
 })
