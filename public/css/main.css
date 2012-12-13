@@ -5451,37 +5451,23 @@ li {
   text-align: center;
   color: #fff;
 }
-.home .body {
-  border-style: solid;
-  border-width: 0 1px 0 1px;
-  border-color: #2671AB;
-  *zoom: 1;
+.home .row {
+  margin-top: 15px;
 }
-.home .body:before,
-.home .body:after {
-  display: table;
-  content: "";
-  line-height: 0;
+.home .col2 p {
+  font-size: 28px;
 }
-.home .body:after {
-  clear: both;
+.home .blue {
+  color: #2671ab;
 }
 .home #signup {
   padding: 10px;
-  padding-bottom: 0px;
-  padding-top: 0px;
-  width: 360px;
-  margin: 0 auto;
-  background: #FFB901;
-  float: right;
+  border: 10px solid #000;
 }
 .home #signup .header h3 {
-  color: #fff;
+  color: #e73e36;
   line-height: 1;
   margin-bottom: 18px;
-}
-.home #signup .header p {
-  color: #fff;
 }
 .home #signup form {
   margin-bottom: 0;
@@ -5490,16 +5476,13 @@ li {
   border-radius: 7px;
   behavior: url(/js/libs/PIE.htc);
 }
-.home #signup form label {
-  color: #fff;
-}
 .home #signup form .control-group.radio-group {
   margin-bottom: 10px;
 }
-.home #signup .form-horizontal .controls {
+.home #signup form .controls {
   margin-left: 20px;
 }
-.home #signup .form-horizontal .control-label.toLeft {
+.home #signup form .control-label.toLeft {
   width: 50px;
   margin-right: 10px;
 }
@@ -5843,35 +5826,32 @@ li {
   clear: both;
 }
 #main-menu .brand {
-  -webkit-box-shadow: 0px 1px 1px #666666;
-  -moz-box-shadow: 0px 1px 1px #666666;
-  box-shadow: 0px 1px 1px #666666;
   margin: 0 auto;
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffc43d) to(#e0a000));
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#b3cef2) to(#7da0ce));
   /*old webkit*/
 
-  background: -webkit-linear-gradient(#ffc43d, #e0a000);
+  background: -webkit-linear-gradient(#b3cef2, #7da0ce);
   /*new webkit*/
 
-  background: -moz-linear-gradient(#ffc43d, #e0a000);
+  background: -moz-linear-gradient(#b3cef2, #7da0ce);
   /*gecko*/
 
-  background: -ms-linear-gradient(#ffc43d, #e0a000);
+  background: -ms-linear-gradient(#b3cef2, #7da0ce);
   /*IE10 preview*/
 
-  background: -o-linear-gradient(#ffc43d, #e0a000);
+  background: -o-linear-gradient(#b3cef2, #7da0ce);
   /*opera 11.10+*/
 
-  background: linear-gradient(#ffc43d, #e0a000);
+  background: linear-gradient(#b3cef2, #7da0ce);
   /*future CSS3 browsers*/
 
-  -pie-background: linear-gradient(#ffc43d, #e0a000);
+  -pie-background: linear-gradient(#b3cef2, #7da0ce);
   /*PIE*/
 
   color: #fff;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
+  -webkit-border-radius: 7px 7px 0 0;
+  -moz-border-radius: 7px 7px 0 0;
+  border-radius: 7px 7px 0 0;
   behavior: url(/js/libs/PIE.htc);
   font-weight: bold;
   font-size: 25px;

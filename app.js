@@ -103,20 +103,18 @@ app.use(function(err, req, res, next) {
 
 app.configure('production', function(){
   app.set('port', process.env.PORT || 8040);
-  db = mongo.db("localhost/careerchange?auto_reconnect=true", {safe: true, strict: false}
-  )
+  db = mongo.db("localhost/careerchange?auto_reconnect=true", {safe: true})
 })
 
 app.configure('staging', function(){
   app.set('port', process.env.PORT || 8041);
-  db = mongo.db("localhost/dev_careerchange?auto_reconnect=true", {safe: true, strict: false})
+  db = mongo.db("localhost/dev_careerchange?auto_reconnect=true", {safe: true})
 })
 
 app.configure('development', function(){
   app.use(express.errorHandler());
   app.set('port', process.env.PORT || 8042);
-  db = mongo.db("localhost/dev_careerchange?auto_reconnect=true", {safe: true, strict: false})
-
+  db = mongo.db("localhost/dev_careerchange?auto_reconnect=true", {safe: true})
 });
 
 require ('./routes');
@@ -229,6 +227,8 @@ app.post('/landing', function(req, res, next) {
 app.post('/home', function(req, res, next) {
   var msg  = '<p>email: '+req.body.email+'</p>'
       msg += '<p>I need: '+req.body.iNeed+'</p>'
+      msg += '<p>What field would you like to work in: '+req.body.whatField+'</p>'
+      msg += '<p>Do you have any experience in this field: '+req.body.experience+'</p>'
   email(
     {
       subject: 'New Signup!', 

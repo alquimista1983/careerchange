@@ -271,44 +271,45 @@ li {
       color: #fff;
     }
   }
-  .body {
-    border-style: solid; 
-    border-width: 0 1px 0 1px; 
-    border-color: #2671AB;
-    .clearfix();
+  .row {
+    margin-top: 15px; 
+  }
+  .col2 {
+    p {
+      font-size: 28px; 
+    } 
+  }
+  .blue {
+    color: #2671ab;
   }
   #signup {
     padding: 10px;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    width: 360px;
-    margin: 0 auto;
-    background: #FFB901;
-    float: right;
+    border: 10px solid #000;
     .header {
       h3 {
-        color: #fff; 
+        //color: #fff; 
+        color: #e73e36;
         line-height: 1;
         margin-bottom: 18px;
       }
       p {
-        color: #fff;
+        //color: #fff;
       }
     }
     form {
       margin-bottom: 0;
       .border-radius-for-pie(7px);
       label {
-        color: #fff; 
+        //color: #fff; 
       }
       .control-group.radio-group {
         margin-bottom: 10px; 
       }
     }
-    .form-horizontal .controls {
+    form .controls {
       margin-left: 20px; 
     }
-    .form-horizontal .control-label.toLeft {
+    form .control-label.toLeft {
       width: 50px; 
       margin-right: 10px;
     }
@@ -628,11 +629,12 @@ li {
   margin-left: 0;
   //margin-top: 15px;
   .brand {
-    .box-shadow(0px 1px 1px #666);
+    //.box-shadow(0px 1px 1px #666);
     margin: 0 auto;
-    .gradient-for-pie(#FFC43D, #E0A000);
+    .gradient-for-pie(#b3cef2, #7da0ce);
+    //background-color: #94b5e2;
     color: #fff;
-    .border-radius-for-pie(15px);
+    .border-radius-for-pie(7px 7px 0 0);
     font-weight: bold;
     font-size: 25px;
     margin-top: 10px;

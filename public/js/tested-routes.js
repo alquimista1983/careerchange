@@ -7,7 +7,7 @@ Router.prototype.home = function(thankyou) {
   $('body').attr('id','home')
   var homeView = new HomeView({thankyou: thankyou})
   $('#app').html(homeView.render().el)
-  document.title = 'Cribum Health'
+  document.title = 'Career Change'
   _gaq.push(['_trackPageview', '/home'])
 }
 
