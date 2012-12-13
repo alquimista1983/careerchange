@@ -33,7 +33,7 @@ return Backbone.View.extend({
   },
 
   notice: function(model){
-    var msg  = '<p>Thanks you for your interest.</p>'
+    var msg  = '<p>Thank you for your interest. We shall get back to you shortly.</p>'
     new ModalView(msg)
   },
 
